@@ -1,11 +1,10 @@
-import nikita from "/src/assets/nikita.jpg";
 import add from "/src/assets/add.png";
 import remove from "/src/assets/remove.png";
 
 
 export default function MeetDirectors({ img, title, job }) {
   return (
-      <div className="bg-[#012F34] w-[350px] h-[250px] text-[#fff] text-center block">
+      <div className="bg-[#012F34] w-[350px] h-[250px] text-white text-center block">
         <img
           className="rounded-full ml-auto mr-auto pt-8 mb-4"
           src={img}
@@ -15,7 +14,7 @@ export default function MeetDirectors({ img, title, job }) {
         <p className="italic text-[15px]"> {job}
         </p>
         <button>
-            <img className="mt-[24px]" src={add} alt="img" />
+            <img className="mt-6" src={add} alt="img" />
         </button>
       </div>
 
