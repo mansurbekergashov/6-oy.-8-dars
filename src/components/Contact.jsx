@@ -1,7 +1,4 @@
 import img from "/src/assets/myteam.svg";
-import facebook from "/src/assets/icon-facebook.svg";
-import pinterest from "/src/assets/icon-pinterest.svg";
-import twitter from "/src/assets/icon-twitter.svg";
 import iconExp from "/src/assets/icon-experience.svg";
 import iconImp from "/src/assets/icon-implementation.svg";
 import iconProd from "/src/assets/icon-productivity.svg";
@@ -13,7 +10,7 @@ export default function Contact() {
     <>
       {/* //HOME FIRST PAGE */}
       <section className="w-full  bg-[#014E56]  font-['Livvic']">
-        <div className="container md:w-[1110px] sm:w-[300px] ml-auto mr-auto">
+        <div className="container lg:w-[1110px] max-md:w-[400px] ml-auto mr-auto">
 
           <Header/>
          
@@ -42,7 +39,7 @@ export default function Contact() {
 
 
           <div>
-            <form className="flex flex-col gap-6 md:w-[540px] sm:w-[300px]">
+            <form className="flex flex-col gap-6 lg:w-[540px] md:w-[300px]  max-sm:w-[300px] max-sm:ml-auto max-sm:mr-auto max-sm:mt-12  ">
               
               <input className="bg-transparent pl-2 border-b  focus:border-b focus:outline-none focus:ring-0 h-[42px] text-white" type="text" placeholder="Name"/> 
               <input className="bg-transparent pl-2 border-b  focus:border-b focus:outline-none focus:ring-0 h-[42px] text-white" type="email" placeholder="Email Address"/>
@@ -62,7 +59,7 @@ export default function Contact() {
 
       {/* FOOTER */}
       <footer className="bg-[#002529] w-full font-['Livvic']">
-        <div className="container md:w-[1110px] sm:w-[300px] mr-auto ml-auto ">
+        <div className="container lg:w-[1110px] max-sm:w-[300px]   mr-auto ml-auto ">
           <Footer/>
         </div>
       </footer>

@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <div>
       
-      <div className="grid grid-cols-3 grid-rows-1 max-md:grid-cols-2 gap-10 pt-12 pb-12">
+      <div className="grid grid-cols-3 max-sm:grid-cols-1  grid-rows-1 max-md:grid-cols-2 gap-10 pt-12 pb-12">
         
         
-        <div className="flex flex-col gap-8 ">
+        <div className="flex flex-col gap-8 max-sm:items-center">
           <img src={img} className="w-40 h-10" alt="Logo" />
           <div className="flex gap-10">
             <Link to={"/"} className="text-white font-semibold text-[18px]">
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         <div className="">
-          <div className="text-white flex flex-col text-[15px] opacity-60 font-semibold gap-1">
+          <div className="text-white flex flex-col text-[15px] opacity-60 font-semibold gap-1 max-sm:items-center">
             <a href="#">987 Hillcrest Lane</a>
             <a href="#">Irvine, CA</a>
             <a href="#">California 92714</a>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className="text-white flex flex-col text-[15px] font-semibold gap-14">
-          <div className="flex md:justify-end gap-4">
+          <div className="flex md:justify-end gap-4 max-sm:justify-center">
             <a href="#">
               <img src={facebook} alt="facebook" />
             </a>
@@ -47,7 +47,7 @@ export default function Footer() {
               <img src={twitter} alt="twitter" />
             </a>
           </div>
-          <p className="opacity-60 flex md:justify-end">
+          <p className="opacity-60 flex md:justify-end max-sm:justify-center">
             Copyright 2020. All Rights Reserved
           </p>
         </div>

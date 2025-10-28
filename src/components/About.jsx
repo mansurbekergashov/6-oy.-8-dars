@@ -30,14 +30,14 @@ export default function About() {
     <>
       {/* //HOME FIRST PAGE */}
       <section className="w-full   bg-[#014E56]  font-['Livvic']">
-        <div className="container w-[1110px] ml-auto mr-auto">
+        <div className="container lg:w-[1110px] md:w-3xl ml-auto mr-auto max-sm:w-100">
           <Header/>
           {/* CONTENT */}
-          <div className="mt-[120px] flex justify-between pb-[120px] gap-[100px]">
+          <div className="mt-[120px] flex max-sm:flex-col justify-between pb-[120px] gap-[100px] max-md:items-center">
             <h1 className="text-[white] text-[90px] leading-[100px]  font-bold w-[350px]">
               About
             </h1>
-            <div className="flex flex-col justify-between w-[730px] h-[156px]">
+            <div className="flex flex-col justify-between md:w-[730px] h-[156px]">
               <img src={rct} className="w-[50px] h-1" alt="Rectangle" />
               <p className="text-[white] text-[18px] font-semibold">
                 We help companies build dynamic teams made up of top global
@@ -53,7 +53,7 @@ export default function About() {
 
       {/* SECOND PAGE */}
       <section className="w-full bg-[#004047] font-['Livvic']">
-        <div className="container w-[1110px] ml-auto mr-auto flex flex-col justify-between pt-[140px] pb-[140px]">
+        <div className="container lg:w-[1110px] max-sm:w-100 ml-auto mr-auto flex flex-col md:justify-between pt-[140px] pb-[140px]">
           <h1 className="text-[48px] text-white text-center mb-16 font-bold ">
             Meet the directors
           </h1>
@@ -70,37 +70,37 @@ export default function About() {
       </section>
 
       {/* THIRD PAGE */}
-      <section className="bg-[#012F34] w-full pt-[140px] font-['Livvic']">
-        <div className="container w-[1110px] ml-auto mr-auto pb-[140px] ">
+      <section className="bg-[#012F34] w-full pt-[140px] font-['Livvic'] ">
+        <div className="container lg:w-[1110px] ml-auto mr-auto max-sm:w-100 pb-[140px] ">
           <h2 className="text-white text-center text-[48px] font-bold mb-16">
             Some of our clients
           </h2>
-          <div className="flex justify-between items-center">
-            <img className="w-[165px] h-7" src={theVerge} alt="theVerge"/>
-            <img className="w-[184px] h-[23px]" src={theJakartaPost} alt="theJakartaPost"/>
-            <img className="w-[180px] h-7" src={theGuardian} alt="theGuardian"/>
-            <img className="w-[165px] h-7" src={techradar} alt="techradar"/>
-            <img className="w-[98px] h-[45px]" src={gadgetsNow} alt="gadgetsNow"/>
+          <div className="flex justify-between items-center max-md:grid max-md:grid-cols-5 max-md:grid-rows-1 max-md:gap-2 max-sm:flex max-sm:flex-col max-sm:gap-14">
+            <img className="h-7" src={theVerge} alt="theVerge"/>
+            <img className="h-[23px]" src={theJakartaPost} alt="theJakartaPost"/>
+            <img className="h-7" src={theGuardian} alt="theGuardian"/>
+            <img className="h-7" src={techradar} alt="techradar"/>
+            <img className="h-[45px]" src={gadgetsNow} alt="gadgetsNow"/>
           </div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="bg-[#F67E7E] w-full font-['Livvic']">
-        <div className="container w-[1110px] mr-auto ml-auto">
-          <div className="flex justify-between items-center  pt-[76px] mb-[-76px]">
+        <div className="container lg:w-[1110px] mr-auto ml-auto">
+          <div className="flex justify-between items-center  pt-[76px] max-sm:pb-[76px]">
             <p className="text-[48px] text-[#012F34] font-bold pl-20">
               Ready to get started?
             </p>
             <Link to={"/contact"} className=" w-[153px] h-12 border-2 rounded-3xl border-black text-[18px] flex items-center justify-center mr-20">contact us</Link>
           </div>
         </div>
-        <img className="relative bottom-0 left-0" src={ctaImg} alt="Img" />
+        <img className="max-sm:hidden relative bottom-0 left-0" src={ctaImg} alt="Img" />
       </section>
 
       {/* FOOTER */}
       <footer className="bg-[#002529] w-full font-['Livvic']">
-        <div className="container w-[1110px] mr-auto ml-auto ">
+        <div className="container lg:w-[1110px] max-sm:w-100 mr-auto ml-auto">
           <Footer/>
         </div>
       </footer>

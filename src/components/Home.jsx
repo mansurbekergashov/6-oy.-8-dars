@@ -17,11 +17,11 @@ export default function Home() {
     <>
       {/* //HOME FIRST PAGE */}
       <section className="w-full  bg-[#014E56]  font-['Livvic']">
-        <div className="container lg:w-[1110px] max-sm:w-100 ml-auto mr-auto">
+        <div className="container lg:w-[1110px] max-sm:w-100 ml-auto mr-auto max-[375px]:w-[250px]">
           <Header />
           {/* CONTENT */}
-          <div className="mt-32 flex max-md:flex-col max-md:gap-6 max-md:text-center  justify-between max-md:w-[520px] max-sm:w-100 max-[375px]:w-[300px] pb-[250px] ml-auto mr-auto">
-            <h1 className="text-white text-[90px] leading-[100px] font-bold w-[500px] max-md:w-[520px] max-sm:w-100 max-[375px]:w-[300px]">
+          <div className="mt-32 flex max-md:flex-col max-md:gap-6 max-md:text-center  justify-between max-md:w-[520px] max-sm:w-100 max-[375px]:w-[250px] pb-[250px] ml-auto mr-auto">
+            <h1 className="text-white text-[90px] leading-[100px] font-bold w-[500px] max-md:w-[520px] max-sm:w-100 max-[375px]:w-[250px]">
               Find the best <span className="text-[#F67E7E]">talent</span>
             </h1>
             <div className="flex flex-col justify-between w-[445px] max-md:w-[520px] max-sm:w-100">
@@ -136,7 +136,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="bg-[#F67E7E] w-full font-['Livvic']">
-        <div className="container lg:w-[1110px] max-sm:100 mr-auto ml-auto">
+        <div className="container lg:w-[1110px] max-sm:w-100 max-sm:text-center mr-auto ml-auto">
           <CTA/>
         </div>
         <img className="lg:relative bottom-0 left-0 md:hidden sm:hidden lg:block" src={ctaImg} alt="Img" />
